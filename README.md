@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Readmeimages/sbpucprlogo.png" width="200">
+  <img src="mdimages/pucpr.png" width="200">
 </p>
 
 <h1 align="center">Computer Science Repository</h1>
