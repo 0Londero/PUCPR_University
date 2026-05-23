@@ -1,11 +1,15 @@
 matriz = []
+print("Digite os dados de 5 alunos conforme o enunciado abaixo:")
+print("1ª coluna: número de matrícula")
+print("2ª coluna: média das provas")
+print("3ª coluna: média dos trabalhos")
+print("4ª coluna: nota final (calculada como a soma das médias)")
 for i in range(5):
-    linha = []
-    for j in range(3):
-        valor = int(input(f"Digite o valor para a posição ({i}, {j}): "))
-        linha.append(valor)
-    nota_final = linha[1] + linha[2]
-    linha.append(nota_final)
+    matricula = int(input(f"Aluno {i+1} - matrícula: "))
+    media_provas = int(input(f"Aluno {i+1} - média das provas: "))
+    media_trabalhos = int(input(f"Aluno {i+1} - média dos trabalhos: "))
+    nota_final = media_provas + media_trabalhos
+    linha = [matricula, media_provas, media_trabalhos, nota_final]
     matriz.append(linha)
 
 maior_nota = -1
